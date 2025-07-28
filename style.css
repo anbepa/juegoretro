@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.screen { display: none; min-height: 100vh; padding: 2rem; }
+.screen.active { display: block; animation: fadeIn 0.5s; }
+.hidden { display: none; }
+
+#logo {
+  font-size: 2.5rem;
+  margin-top: 20vh;
+}
+.tagline {
+  color: #ffa500;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+}
+.btn.primary { animation: pulse 1.2s infinite; }
+.btn:active { transform: scale(0.95); }
+
+.card-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+.console-card, .skin-card, .game-card {
+  background: #222;
+  padding: 1rem;
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px #000;
+}
+.console-card.disabled, .skin-card.disabled, .game-card.disabled { opacity: 0.4; }
+.console-card .icon { font-size: 2rem; }
+.stars { color: gold; font-size: 0.8rem; }
+.mockup { width: 80px; height: 160px; margin: 0 auto 0.5rem; background: #555; border-radius: 10px; }
+.mockup.gold { background: #c7a216; }
+.mockup.green { background: #3fa535; }
+.mockup.black { background: #000; }
+.mockup.blue { background: #204080; }
+.cartridge { width: 80px; height: 60px; margin: 0 auto 0.5rem; background: #666; border-radius: 4px; }
+
+#screen-container { position: relative; display: inline-block; }
+canvas { image-rendering: pixelated; width: 100%; height: auto; background: #000; }
+#overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+.control button { pointer-events: all; margin: 4px; padding: 8px 12px; background: #333; color: #fff; border: none; border-radius: 4px; }
+#dpad { position: absolute; bottom: 10px; left: 10px; }
+#buttons { position: absolute; bottom: 10px; right: 10px; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }

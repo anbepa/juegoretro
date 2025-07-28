@@ -1,0 +1,11 @@
+{
+  "name": "retra-emulator",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vercel dev --listen 3000"
+  },
+  "private": true,
+  "devDependencies": {
+    "vercel": "^44.6.4"
+  }
+}
