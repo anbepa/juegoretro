@@ -12,11 +12,14 @@ Abre `index.html` en un navegador moderno. Pulsa **Start** y sigue las pantallas
 - `style.css`: estilos con tipografía retro y animaciones básicas.
 - `script.js`: lógica de navegación entre pantallas y carga del emulador.
 - `jsnes.min.js`: versión minificada del emulador jsnes.
-- `rom.js`: ROM de ejemplo embebido en base64.
+- `rom.js`: ROM de ejemplo embebido en base64. Se incluye **Concentration Room**,
+  un juego homebrew publicado bajo licencia GPLv3.
 
 ## Advertencia Legal
 
-El ROM incluido es solo un ejemplo vacío para pruebas. Sustitúyelo por un ROM que poseas legalmente.
+El proyecto incluye de ejemplo el ROM **Concentration Room** (`croom.nes`),
+publicado por Damian Yerrick bajo licencia GPLv3. Puedes usarlo libremente o
+reemplazarlo por otro ROM que poseas.
 
 ## Despliegue en Vercel
 
