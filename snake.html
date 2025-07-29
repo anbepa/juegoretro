@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    canvas { background: #000; display:block; margin: 0 auto; }
+  </style>
+</head>
+<body class="skin-1">
+  <section id="snake-screen" class="screen active">
+    <h2>Snake</h2>
+    <canvas id="snake-canvas" width="256" height="256"></canvas>
+    <div id="overlay">
+      <div id="dpad" class="control">
+        <button data-key="UP" class="up">▲</button>
+        <button data-key="LEFT" class="left">◀</button>
+        <button data-key="DOWN" class="down">▼</button>
+        <button data-key="RIGHT" class="right">▶</button>
+      </div>
+    </div>
+    <a href="index.html" class="btn">Back</a>
+  </section>
+  <script src="snake.js"></script>
+</body>
+</html>
